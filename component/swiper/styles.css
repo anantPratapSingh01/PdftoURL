@@ -1,0 +1,112 @@
+body {
+  background: #0f0f0f;
+}
+
+.testimonial-section {
+  position: relative;
+  min-height: 100vh;
+  padding: 80px 20px;
+  overflow: hidden;
+  background: white;
+}
+
+.heading {
+  text-align: center;
+  color: #f59e0b;
+  font-size: 45px;
+  margin-bottom: 50px;
+}
+
+.circle-bg {
+  position: absolute;
+  width: 650px;
+  height: 650px;
+  border: 2px dashed rgba(245, 158, 11, 0.2);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: rotate 40s linear infinite;
+}
+
+.mySwiper {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+
+.card {
+  width: 100%;
+  min-height: 350px;
+  /* background: rgba(255,255,255,0.05); */
+  background: rgba(0, 0, 0, .8);
+  border: 1px solid rgba(245,158,11,0.3);
+  border-radius: 30px;
+  backdrop-filter: blur(20px);
+  padding: 50px;
+  text-align: center;
+  color: white;
+}
+
+.card h2 {
+  font-size: 28px;
+  font-style: italic;
+  color: #ddd;
+  margin-bottom: 40px;
+}
+
+.user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.avatar {
+  width: 70px;
+  height: 70px;
+  background: #f59e0b;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+.user h3 {
+  color: white;
+}
+
+.user p {
+  color: #f59e0b;
+}
+
+.stars {
+  margin-top: 25px;
+  margin-left: 50px;
+  font-size: 24px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #f59e0b !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #f59e0b !important;
+}
+
+@keyframes rotate {
+  from {
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}

@@ -46,7 +46,8 @@ export default function Header() {
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
         isScrolled
           ? "bg-black/80 backdrop-blur-md shadow-lg"
-          : "bg-gradient-to-r from-blue-400 via-purple-500 to-indigo-600"
+          :"bg-transparent"
+          // : "bg-gradient-to-r from-blue-400 via-purple-500 to-indigo-600"
       }`}
     >
       <div className="max-w-7xl mx-auto h-16 px-6 flex items-center justify-between">

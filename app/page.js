@@ -5,6 +5,7 @@ import { useState } from "react";
 import Header from "@/component/Header.jsx";
 import Swipers from "@/component/slider/Swipers.jsx";
 import Converter from "@/component/Converter";
+import Swapers1 from "@/component/swiper/Swapers1";
 
 // const client = new Client()
 //   .setEndpoint(process.env.NEXT_PUBLIC_APPWRITE_ENDPOINT)
@@ -102,6 +103,7 @@ export default function Home() {
     
     <Swipers/>
     <Converter/>
+    <Swapers1/>
    
       
     </>
