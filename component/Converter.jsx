@@ -70,7 +70,7 @@ function Converter() {
     return (
 
 
-        <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-100 via-white to-purple-100 p-6">
+        <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-100 via-white to-purple-100 p-6" id="converter">
             <motion.div
                 initial={{ opacity: 0, y: 50, scale: 0.9 }}
                 animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -99,7 +99,7 @@ function Converter() {
                 <div className="relative">
                     <motion.label
                         className={`flex flex-col items-center justify-center w-full h-52 border-2 border-dashed border-gray-300 rounded-3xl transition
-      ${!token ? "blur-sm pointer-events-none opacity-60" : "cursor-pointer hover:border-indigo-500 hover:bg-indigo-50"}
+      ${!token ? "blur-sm pointer-events-none opacity-60" : "cursor-pointer hover:border-indigo-500 hover:bg-indigo-50 pl-4"}
     `}
                     >
                         <UploadCloud size={50} className="text-indigo-600 mb-3" />
@@ -115,7 +115,7 @@ function Converter() {
                         <input
                             type="file"
                             accept="application/pdf"
-                            className="hidden"
+                            className="hidden "
                             onChange={(e) => setFile(e.target.files[0])}
                         />
                     </motion.label>

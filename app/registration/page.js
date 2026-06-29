@@ -24,9 +24,10 @@ function Register() {
       });
 
       const data = await res.json();
-      toast.dismiss(loadingToast);
+      
 
       if (res.ok) {
+        toast.dismiss(loadingToast);
         toast.success("Account created successfully ✅");
 
         setFormData({
