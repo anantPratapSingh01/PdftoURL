@@ -15,7 +15,7 @@ const testimonials = [
     text: "I love the holistic approach they take towards yoga. It's not just about poses; it's about overall well-being."
   },
   {
-    name: "Anant Kumar",
+    name: "Luv ",
     city: "Delhi, India",
     text: "Amazing experience! The PDF converter is fast and easy to use."
   },
