@@ -14,7 +14,7 @@ function Login() {
     const loadingToast = toast.loading("Logging in... ⏳");
 
     try {
-      console.log(formData);
+      
 
       const res = await fetch("/api/login", {
         method: "POST",
@@ -37,7 +37,7 @@ function Login() {
 
         localStorage.setItem("urltoken", data.token);
         localStorage.setItem("user",JSON.stringify(data.user));
-        console.log( localStorage.setItem("urltoken", data.token))
+        
 
         setFormData({
           email: "",

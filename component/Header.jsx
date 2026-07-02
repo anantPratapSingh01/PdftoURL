@@ -39,7 +39,7 @@ export default function Header() {
     }
   }, []);
 
-  console.log("user role is ", user);
+  
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {

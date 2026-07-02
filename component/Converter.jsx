@@ -30,7 +30,7 @@ function Converter() {
     const handleUploade = async (e) => {
         e.preventDefault();
         setUploading(true)
-        console.log("file ha ", file)
+        
         if (!file) {
             toast.error("Please select a PDF file");
             setUploading(false)
@@ -51,10 +51,10 @@ function Converter() {
 
             if (res.ok) {
                 const data = await res.json()
-                console.log("data ha ", data)
+               
                 toast.success("Upload successful! ✅");
                 setPdFUrl(data.pdfUrl)
-                console.log("pdf url ha ", data.pdfUrl)
+                
                 setFile(null)
 
             }

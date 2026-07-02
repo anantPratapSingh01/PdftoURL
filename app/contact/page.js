@@ -69,7 +69,7 @@ const Contact = () => {
               </h1>
 
               <p className="text-gray-300 text-lg leading-8 mb-10">
-                We'd love to hear from you. Whether you have a question,
+                We&d love to hear from you. Whether you have a question,
                 feedback, or need support, feel free to contact us anytime.
               </p>
 

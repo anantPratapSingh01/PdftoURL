@@ -12,7 +12,7 @@ function Profile() {
 
     useEffect(() => {
         const storeUser = JSON.parse(localStorage.getItem("user"));
-        console.log(storeUser.email)
+        
 
         const handleFetchUser = async () => {
             try {
@@ -27,7 +27,7 @@ function Profile() {
                 })
 
                 const data = await res.json();
-                console.log(data)
+                
 
                 if (res.ok) {
                     setUser(data.findOneUser);
@@ -48,7 +48,7 @@ function Profile() {
             handleFetchUser();
         }
         
-    }, []);
+    }, [router]);
 
     if (!user) {
         return (
