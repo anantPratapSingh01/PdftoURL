@@ -7,6 +7,7 @@ function Register() {
     name: "",
     email: "",
     password: "",
+    role: "user",
   });
 
   const handleSubmit = async (e) => {

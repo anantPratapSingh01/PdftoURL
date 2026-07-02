@@ -6,7 +6,7 @@ import { NextResponse } from 'next/server';
 export async function POST(req) {
     try {
         await connectDB();
-        const { name, email, password } = await req.json();
+        const { name, email, password,role } = await req.json();
         if (!name || !email || !password) {
             return new NextResponse.json({message:"All fields are required"}, { status: 400 });
         }
@@ -18,7 +18,7 @@ export async function POST(req) {
             );
         }
         const hashedPassword = await bcrypt.hash(password, 10);
-        const newUser = new User({ name, email, password: hashedPassword });
+        const newUser = new User({ name, email, password: hashedPassword ,role });
         await newUser.save();
         return NextResponse.json(
             { message: "User registered successfully" },
@@ -28,14 +28,14 @@ export async function POST(req) {
     }
 }
 
-            export async function GET(req) {
-                try {
-                    await connectDB()
+                export async function GET(req) {
+                    try {
+                        await connectDB()
 
-                    const AllUser=await User.find({});
+                        const AllUser=await User.find({});
 
-                    return  NextResponse.json({msg:"All use is find",AllUser},{status:200})
-                } catch (error) {
-                return  NextResponse.json({msg:"Internal error"},{status:500}) 
+                        return  NextResponse.json({msg:"All use is find",AllUser},{status:200})
+                    } catch (error) {
+                    return  NextResponse.json({msg:"Internal error"},{status:500}) 
+                    }
                 }
-            }

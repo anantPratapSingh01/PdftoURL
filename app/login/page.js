@@ -41,7 +41,7 @@ function Login() {
 
         setFormData({
           email: "",
-          password: "",
+          password: "", 
         });
 
         setTimeout(() => {
